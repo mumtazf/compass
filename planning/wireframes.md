@@ -6,14 +6,14 @@ Reference the Creating an Entity Relationship Diagram final project guide in the
 
 ## ⭐ Wireframe 1: [Login Page]
 
-![Login page](assets/front_page.png)
+![Login page](https://github.com/mumtazf/compass/blob/main/assets/front_page.png)
 
 ## ⭐ Wireframe 2: [Post jobs form]
 
-![Form that allows users to post jobs](assets/post_jobs.png)
+![Form that allows users to post jobs](https://github.com/mumtazf/compass/blob/main/assets/post_jobs.png)
 
 ## ⭐ Wireframe 3: [Posts page]
 
-![Page that is used to display the posts submitted by the users](assets/posts_page.png)
+![Page that is used to display the posts submitted by the users](https://github.com/mumtazf/compass/blob/main/assets/posts_page.png)
 
 [👉🏾👉🏾👉🏾 include more wireframes as desired]
