@@ -31,9 +31,14 @@ Backend: Express.js, SQL, postgreSQL
 
 ### [Posting Jobs and Advice Posts]
 
+Users will be able to post and view posts
+
+!(https://github.com/mumtazf/compass/blob/main/assets/walkthrough.gif)[Walkthrough of posts feature]
+
+### [Filtering Posts]
+
 Users will be able to filter opportunities based on a number of predefined categories
 
-[gif goes here]
 
 ### [CRUD Operations]
 

@@ -11,9 +11,9 @@ const Card = (props) => {
             <p>{props.post.username}</p>
           </div>
 
-          <h3>{props.post.title}</h3>
-          <div className="card_description">
-            <p>{props.post.description}</p>
+            <h3>{props.post.title}</h3>
+            <div className="card_description">
+              <p>{props.post.description}</p>
           </div>
         </div>
       </div>
