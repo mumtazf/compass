@@ -19,13 +19,17 @@ const AllPosts = () => {
     }, [])
 
     return (
-        <div className='postGrid'>
-            {
-                posts && posts.length > 0 ? posts.map((post) => 
-                    <Card post = {post} />
-            ) : <h3>{'No posts found.... '}</h3>
-            }
+        <div className = "allPosts">
+            <h1>All Posts</h1>
+            <div className='postGrid'>
+                {
+                    posts && posts.length > 0 ? posts.map((post) => 
+                        <Card post = {post} />
+                ) : <h3>{'No posts found.... '}</h3>
+                }
+            </div>
         </div>
+
     )
 }
 

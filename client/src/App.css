@@ -8,13 +8,15 @@
   margin: 1em;
   height: 20em;
   width: 30em;
+  display: flex;
+  flex-direction: row;
 }
 
 .card_info {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 0.5em;
+  flex-direction: column;
 }
 
 .user_info {
@@ -27,4 +29,18 @@
 
 .card_description {
   /* Additional styles for the description */
+}
+
+.postGrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-left: 2em;
+}
+
+.allPosts{
+  margin-left: 5em;
+}
+
+.allPosts h1{
+  text-align: center;
 }
