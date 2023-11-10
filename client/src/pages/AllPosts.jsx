@@ -1,21 +1,18 @@
 import {useState, useEffect} from 'react'
 import Card from '../components/Card'
-import PostData from '../data/post.js'
+import postData from '../data/post.js'
 
 const AllPosts = () => {
 
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        // (async () => {
-        //     try{
-        //         const data = await api.getAllPosts()
-        //         setPosts(data)
-        //     } catch(error){
-        //         throw error
-        //     }
-        // }) ()
-        setPosts(PostData)
+        const fetchPosts = async () => {
+            const response = await fetch('http://localhost:3001/postsRoute/');
+            const data = await response.json();
+            setPosts(data);
+        }
+          fetchPosts();
     }, [])
 
     return (

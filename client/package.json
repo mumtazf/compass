@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "reset": "cd config && node --require dotenv/config reset.js",
+    "start": "npm run reset && nodemon --require dotenv/config server.js"
+
   },
   "dependencies": {
     "react": "^18.2.0",

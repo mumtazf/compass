@@ -1,0 +1,83 @@
+.CreatePost {
+    margin-left: 5em;
+    margin-right: 5em;
+    font-size: 4em;
+}
+
+form input {
+    margin-top: 10px;
+    width: 50%;
+    height: 3em;
+    border-radius: 8px;
+    border: 1px solid ;
+    font-size: 1em;
+    padding-left: 0.2em;;
+    background-color: rgb(9, 55, 9);
+    color: white;
+}
+
+form label {
+    font-size: 1em;
+    display: block;
+}
+
+form textarea {
+    border-radius: 8px;
+    width: 80%;
+    border: 1px solid ;
+    font-size: 1em;
+}
+
+input::placeholder{
+    font-size: 1em;
+}
+
+.submit-button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type=checkbox]{
+    width: 3em;
+    height: 2em;
+}
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+
+  select{
+    font-size: 1em;
+    background-color: rgb(9, 55, 9);
+
+  }
+
+  input.submit-button {
+    width: 20% !important;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}

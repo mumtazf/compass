@@ -1,0 +1,31 @@
+.jobs {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.jobs table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.jobs th, .jobs td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.jobs tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.jobs th {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1c4e1e;
+    color: white;
+    font-size: 2em;
+}
