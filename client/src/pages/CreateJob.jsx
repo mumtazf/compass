@@ -86,7 +86,7 @@ const CreateJob = () => {
 
                     <li>
                         <label>Link to posting</label>
-                        <input type = 'url' id = 'joblink' name = 'joblink' value = {job.url} onChange = {handleChange} placeholder = 'Enter the link to the job posting' required />
+                        <input type = "text" id = "url" name = "url" value = {job.url} onChange={handleChange} placeholder = "Enter the link to the job posting" required />
                     </li>
 
                     <li>

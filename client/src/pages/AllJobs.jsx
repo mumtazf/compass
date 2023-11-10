@@ -18,6 +18,7 @@ const AllJobs = () => {
                 <thead>
                     <tr>
                         <th>Title</th>
+                        <th>Company</th>
                         <th>Description</th>
                         <th>Category</th>
                         <th>Link to posting</th>
@@ -27,6 +28,7 @@ const AllJobs = () => {
                     {jobs.map((job) => (
                         <tr key={job.id}>
                             <td>{job.title}</td>
+                            <td>{job.company}</td>
                             <td>{job.description}</td>
                             <td>{job.category}</td>
                             <td>{job.url}</td>
