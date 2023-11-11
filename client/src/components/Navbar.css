@@ -1,0 +1,21 @@
+
+.navStyle{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.navStyle p{
+    font-size: 2em;
+}
+
+.linkStyle {
+    text-decoration: 'none';
+    color: black;
+}
+
+button{
+    font-size: 1em;
+}

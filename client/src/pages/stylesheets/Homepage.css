@@ -1,32 +1,89 @@
 .section1{
-    min-height: 100vh;
-    font-size: 4em;
-    background-color: #58a75824;
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 59, 0);
+    margin-bottom: 10em;
+}
+
+.section1 img{
+    width: 50em;
+    height: 30em;
+}
+
+.section1 h1{
+    font-size: 3em;
+    background-color: white;
+}
+
+.section1 p{
+    font-size: 1.5em;
+    font-style: italic;
+    color:cadetblue;
 }
 
 .section2{
-    min-height: 100vh;
-    font-size: 4em;
+    min-height: 60vh;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.section2 h2, .section3 h2{
+    color: rgb(0, 59, 0);
+    font-style: italic;
+    font-display: bold;
+    font-size: 2em;
+}
+
+.section2 img {
+    height: 15em;
+    width: 20em;
+}
+
+.section2-part2{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.section2-part1{
+    display: flex;
+    flex-direction: column;
 }
 
 .section3{
-    min-height: 100vh;
-    font-size: 4em;
+    min-height: 70vh;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
+.section3 img {
+    height: 25em;
+    width: 35em;
+}
+
+.section3-part1{
+    display: flex;
+    flex-direction: row;
+}
+
+.section3-part2{
+    display: flex;
+    flex-direction: column;
+}
 
 button{
-    background-color: #ffffff;
+    background-color:#58a75835;
     color: black;
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
-    font-size: 1.5em;
     margin: 10px;
+    font-size: 1em !important;
     cursor: pointer;
 }
 
 button:hover{
-    background-color:#58a75835;
-    color: black;
+    background-color:rgb(10, 56, 72);
+    color: white;
 }

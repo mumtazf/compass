@@ -1,7 +1,7 @@
 .CreateJob {
     margin-left: 5em;
     margin-right: 5em;
-    font-size: 4em;
+    font-size: 1em;
 }
 
 form input {
@@ -19,6 +19,7 @@ form input {
 form label {
     font-size: 1em;
     display: block;
+    font-style: bold;
 }
 
 form textarea {
@@ -46,8 +47,8 @@ input::placeholder{
     border-radius: 4px;
 }
 input[type=checkbox]{
-    width: 3em;
-    height: 2em;
+    width: 2em;
+    height: 1em;
 }
 
 
