@@ -33,18 +33,19 @@ Backend: Express.js, SQL, postgreSQL
 
 Users will be able to post and view posts
 
-!(https://github.com/mumtazf/compass/blob/main/assets/walkthrough.gif)[Walkthrough of posts feature]
-
-### [Filtering Posts]
-
-Users will be able to filter opportunities based on a number of predefined categories
-
+![Walkthrough of posts feature](https://github.com/mumtazf/compass/blob/main/assets/walkthrough.gif)
 
 ### [CRUD Operations]
 
 Application will be able to perform basic crud operations
 
-[gif goes here]
+![Walkthrough of crud features](https://github.com/mumtazf/compass/blob/main/assets/walkthrough2.gif)
+
+
+### [Filtering Posts]
+
+Users will be able to filter opportunities based on a number of predefined categories
+
 
 ### [Admin v/s User Priviliges]
 
@@ -65,6 +66,9 @@ The application will contain links to actual internship job postings
 ### [Routings]
 
 The web app includes dynamic routes for both frontend and backend apps.
+
+![Walkthrough of crud features](https://github.com/mumtazf/compass/blob/main/assets/walkthrough2.gif)
+
 
 [gif goes here]
 
