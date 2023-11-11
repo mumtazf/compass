@@ -1,4 +1,4 @@
-.CreatePost {
+.CreateJob {
     margin-left: 5em;
     margin-right: 5em;
     font-size: 4em;
@@ -12,8 +12,8 @@ form input {
     border: 1px solid ;
     font-size: 1em;
     padding-left: 0.2em;;
-    background-color: rgb(9, 55, 9);
-    color: white;
+    background-color: #58a75835;
+    color: rgb(0, 0, 0);
 }
 
 form label {
@@ -69,7 +69,7 @@ input[type=checkbox]{
 
   input.submit-button {
     width: 20% !important;
-    background-color: #4CAF50; /* Green */
+    background-color: #58a75835; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;

@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import './CreateJob.css';
+import './stylesheets/CreateJob.css';
 
 const CreateJob = () => {
     const date = new Date();

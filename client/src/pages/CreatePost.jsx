@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import './CreatePost.css';
+import './stylesheets/CreatePost.css';
 
 const CreatePost = () => {
     const date = new Date();
@@ -52,28 +52,41 @@ const CreatePost = () => {
 
     return (
         <div className = 'CreatePost'>
-            <center><h2>Post Now!</h2></center>
+            <center><h2>Share a post with the community</h2></center>
             <form>
-                <label>Username</label>
-                <input type = 'text' id = 'username' name = 'username' value = {post.username} onChange = {handleChange} placeholder = 'Enter your username' required />
+                <ul>
 
-                <label>Title</label>
-                <input type = 'text' id = 'title' name = 'title' value = {post.title} onChange = {handleChange} placeholder = 'Enter your title' required />
+                <li>
+                    <label>Username</label>
+                    <input type = 'text' id = 'username' name = 'username' value = {post.username} onChange = {handleChange} placeholder = 'Enter your username' required />
+                </li>
 
-                <label>Description</label>
-                <input type = 'text' id = 'description' name = 'description' value = {post.description} onChange = {handleChange} placeholder = 'Enter your description' required />
+                <li>
+                    <label>Title</label>
+                    <input type = 'text' id = 'title' name = 'title' value = {post.title} onChange = {handleChange} placeholder = 'Enter your title' required />
+                </li>
 
+                <li>
+                    <label>Description</label>
+                    <input type = 'text' id = 'description' name = 'description' value = {post.description} onChange = {handleChange} placeholder = 'Enter your description' required />
+                </li>
 
-                <label for = "category">Choose a category:</label>
-                <select id = "category" name = "category">
-                    <option value = "career">Career Advice</option>
-                    <option value = "education">Courses</option>
-                    <option value = "company">Company Question</option>
-                    <option value = "interview">Interview Questions</option>
+                <li>
+                    <label for = "category">Choose a category:</label>
+                    <select id = "category" name = "category">
+                        <option value = "career">Career Advice</option>
+                        <option value = "education">Courses</option>
+                        <option value = "company">Company Question</option>
+                        <option value = "interview">Interview Questions</option>
                     </select>
+                </li>
 
-                <input type = 'submit' value = 'Post' onClick = {createPost} />
 
+                <li>
+                    <input type = 'submit' value = 'Post' onClick = {createPost} />
+                </li>
+                
+                </ul>
             </form>
         </div>
     )

@@ -1,9 +1,10 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-size: 2em;
+  font-size: 0.3em;
   color-scheme: light dark;
   background-color: #ffffff;
   color: black;
   padding: 2em;
 }
+
