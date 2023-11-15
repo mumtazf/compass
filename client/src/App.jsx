@@ -7,6 +7,8 @@ import NavBar from './components/NavBar'
 import CreateJob from './pages/CreateJob'
 import CreatePost from './pages/CreatePost'
 import AllJobs from './pages/AllJobs'
+import AdminView from './pages/AdminView'
+
 import { useRoutes } from 'react-router-dom'
 
 
@@ -40,6 +42,9 @@ const App = () => {
     }, {
       path: '/allJobs',
       element: <AllJobs />
+    }, {
+      path: '/adminView',
+      element: <AdminView/>
     }
   ])
 

@@ -4,6 +4,7 @@ import PostsController from '../controllers/posts.js'
 const router = express.Router()
 
 router.get('/', PostsController.getPosts)
+router.get('/approval', PostsController.getPostsForApproval)
 router.get('/:id', PostsController.getPostById)
 
 router.post('/', PostsController.createPost)
