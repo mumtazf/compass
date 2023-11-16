@@ -36,6 +36,7 @@ const AdminCard = (props) => {
 
         try{
             fetch(`http://localhost:3001/postsRoute/${props.post.id}`, options);
+            window.location = '/adminView'
         } catch(error){
             console.log('Error: ', error);
         }
@@ -52,7 +53,7 @@ const AdminCard = (props) => {
 
             <h3>{props.post.title}</h3>
             <div className="card_description">
-              <p>{props.post.description}</p>
+              <p>{props.post.description.substring(0,100)}</p>
           </div>
 
           <div>

@@ -5,9 +5,15 @@ import './Navbar.css'
 const NavBar = () => {
     return (
         <div className='navStyle'>
-            <Link to = '/'><p>Compass</p></Link>
-            <Link to = '/new'><button className = 'addBtn'>+ Add Post</button></Link>
-            <Link to = '/newJob'><button className = 'addBtn'>+ Add Job</button></Link>
+            <div className='navStyle-title'>
+                <Link to = '/'>Compass</Link>
+            </div>
+
+            <div>
+                <Link to = '/new'><button className = 'navStyle-button'>+ Add Post</button></Link>
+                <Link to = '/newJob'><button className = 'addBtn'>+ Add Job</button></Link>
+            </div>
+
         </div>
     );
 }

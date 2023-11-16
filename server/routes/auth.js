@@ -47,3 +47,5 @@ router.get(
         failureRedirect: '/allPosts',
     })
 )
+
+export default router

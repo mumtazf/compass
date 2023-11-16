@@ -22,6 +22,7 @@ const AllJobs = () => {
                         <th>Description</th>
                         <th>Category</th>
                         <th>Link to posting</th>
+                        <th>Save job</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,6 +33,7 @@ const AllJobs = () => {
                             <td>{job.description}</td>
                             <td>{job.category}</td>
                             <td>{job.url}</td>
+                            <td><button>🔖</button></td>
                         </tr>
                     ))}
                 </tbody>

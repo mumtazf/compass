@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import AdminCard from '../components/AdminCard'
+import './stylesheets/adminView.css'
 
 const AdminView = () => {
 

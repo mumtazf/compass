@@ -1,13 +1,15 @@
 import GitHubStrategy from 'passport-github2';  
-import pool from './database.js';
+import {pool} from './database.js';
 
 const options = {
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: 'http://localhost:3001/auth/github/callback'
+    callbackURL: `http://localhost:3001/auth/github/callback`
 }
 
-const verify = async () => {
+const verify = async (accessToken, refreshToken, profile, callback) => {
+
+    console.log("verifying!!")
     const {_json: {id, name, login, avatar_url}} = profile;
 
     const userData = {

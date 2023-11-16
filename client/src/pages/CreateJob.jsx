@@ -44,7 +44,7 @@ const CreateJob = () => {
 
         try{
             fetch('http://localhost:3001/jobsRoute/', options);
-            //window.location = '/';
+            window.location = '/allJobs';
         } catch(error){
             console.error('Error: ', error);
         }

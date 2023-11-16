@@ -24,7 +24,7 @@ const Homepage = () => {
                     <div className="section2-part1">
                         <p>Connect with students and professionals all over the world. Share your top programming tips, ask for advice, discuss interview prep resources, and more! </p>
                         <div>
-                            <Link to = ""><button>Create an account</button></Link>
+                            <Link to = "/login"><button>Create an account</button></Link>
                             <Link to = "/new"><button>Make a post</button></Link>
                         </div>
                     </div>

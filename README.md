@@ -1,5 +1,7 @@
 # Compass
 
+Reached until authentication part and now I need to figure out how to add login component to a button sso users can do that
+
 CodePath WEB103 Final Project
 
 Designed and developed by: Mumtaz

@@ -13,7 +13,7 @@ const Card = (props) => {
 
             <h3>{props.post.title}</h3>
             <div className="card_description">
-              <p>{props.post.description}</p>
+              <p>{props.post.description.substring(0,100)}</p>
           </div>
         </div>
       </div>

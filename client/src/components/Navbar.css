@@ -5,17 +5,29 @@
     padding: 1em;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
+    height: 2em;
+    align-items: center;
+    background-color: #58a75835;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.navStyle p{
-    font-size: 2em;
-}
 
 .linkStyle {
     text-decoration: 'none';
     color: black;
 }
 
-button{
+.navStyle-title{
     font-size: 1em;
+}
+
+.navStyle-button{
+    background-color:#58a75835;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1em !important;
+    cursor: pointer;
 }

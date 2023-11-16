@@ -44,3 +44,8 @@
 .allPosts h1{
   text-align: center;
 }
+
+.app-right{
+  display: flex;
+  justify-content: flex-end;
+}

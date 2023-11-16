@@ -4,8 +4,8 @@ import cors from 'cors'
 import postsRouter from './routes/posts.js';
 import jobsRouter from './routes/jobs.js';
 import authRoutes from './routes/auth.js';
+import userJobsRoutes from './routes/user-jobs.js'
 
-import session from 'express-session'
 import passport from 'passport';
 import session from 'express-session';
 import {GitHub} from './config/auth.js';
@@ -39,7 +39,6 @@ passport.deserializeUser((user, done) => {
 })
 
 
-app.use(cors());
 app.use(express.json());
 
 
@@ -47,9 +46,10 @@ app.use(express.json());
 app.use('/postsRoute', postsRouter)
 app.use('/jobsRoute', jobsRouter)
 app.use('/auth', authRoutes)
+app.use('/users-jobs', userJobsRoutes)
 
 app.get('/', (req, res) => {
-    res.send('Hello from homepage.')
+    res.redirect('http://localhost:5173')
 })
 
 const PORT = process.env.PORT || 3001

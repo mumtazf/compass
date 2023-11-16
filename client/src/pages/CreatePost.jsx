@@ -41,7 +41,7 @@ const CreatePost = () => {
 
         try{
             fetch('http://localhost:3001/postsRoute/', options);          
-
+            window.location = '/allPosts'
         } catch(error){
             console.error('Error: ', error);
         }
