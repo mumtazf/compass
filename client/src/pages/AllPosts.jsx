@@ -3,7 +3,7 @@ import Card from '../components/Card'
 import postData from '../data/post.js'
 import '../App.css'
 
-const AllPosts = () => {
+const AllPosts = (props) => {
 
     const [posts, setPosts] = useState([])
 

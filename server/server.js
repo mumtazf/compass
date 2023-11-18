@@ -12,7 +12,7 @@ import {GitHub} from './config/auth.js';
 
 const app = express();
 
-const CLIENT_URL = process.env.NODE_ENV === 'production' ? 'http://compass-production-8bfb.up.railway.app' : 'http://localhost:3000'
+const CLIENT_URL = process.env.NODE_ENV === 'production' ? 'http://compass-production-8bfb.up.railway.app' : 'http://localhost:5173'
 
 //setting up authentication
 app.use(session({
