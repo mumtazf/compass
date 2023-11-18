@@ -43,8 +43,8 @@ router.get(
 router.get(
     '/github/callback',
     passport.authenticate('github', {
-        successRedirect: '/',
-        failureRedirect: '/allPosts',
+        successRedirect: 'http://compass-production-8bfb.up.railway.app',
+        failureRedirect: 'http://compass-production-8bfb.up.railway.app/allPosts',
     })
 )
 

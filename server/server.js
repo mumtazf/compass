@@ -20,7 +20,7 @@ app.use(session({
 }))
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'http://compass-production-8bfb.up.railway.app',
     methods: 'GET, POST, PUT, PATCH, DELETE',
     credentials: true
 }))
@@ -49,7 +49,7 @@ app.use('/auth', authRoutes)
 app.use('/users-jobs', userJobsRoutes)
 
 app.get('/', (req, res) => {
-    res.redirect('http://localhost:5173')
+    res.redirect('http://compass-production-8bfb.up.railway.app')
 })
 
 const PORT = process.env.PORT || 3001
