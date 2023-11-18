@@ -22,7 +22,7 @@ app.use(session({
 }))
 
 app.use(cors({
-    origin: CLIENT_URL,
+    origin: '*',
     methods: 'GET, POST, PUT, PATCH, DELETE',
     credentials: true
 }))
