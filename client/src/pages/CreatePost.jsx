@@ -40,7 +40,7 @@ const CreatePost = () => {
         }
 
         try{
-            fetch('http://localhost:3001/postsRoute/', options);          
+            fetch(`${props.api_url}/postsRoute/`, options);          
             window.location = '/allPosts'
         } catch(error){
             console.error('Error: ', error);

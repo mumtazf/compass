@@ -16,7 +16,7 @@ const AdminCard = (props) => {
         }
 
         try{
-            fetch(`http://localhost:3001/postsRoute/${props.post.id}`, options);
+            fetch(`${props.api_url}/postsRoute/${props.post.id}`, options);
         } catch(error){
             console.log('Error: ', error);
         }
@@ -35,7 +35,7 @@ const AdminCard = (props) => {
         }
 
         try{
-            fetch(`http://localhost:3001/postsRoute/${props.post.id}`, options);
+            fetch(`${props.api_url}/postsRoute/${props.post.id}`, options);
             window.location = '/adminView'
         } catch(error){
             console.log('Error: ', error);
