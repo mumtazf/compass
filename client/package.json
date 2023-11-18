@@ -1,43 +1,25 @@
 {
   "name": "client",
   "private": true,
-  "proxy": "http://localhost:3001",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve build -s -n -L -p $PORT",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "reset": "cd config && node --require dotenv/config reset.js",
+    "start": "npx http-server ./dist npm run reset && nodemon --require dotenv/config server.js"
+
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.18.0",
-    "serve": "^14.2.1"
+    "react-router-dom": "^6.18.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "vite": "^4.1.0"
-  },  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
