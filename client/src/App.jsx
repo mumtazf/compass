@@ -14,7 +14,7 @@ import SavedJobs from './pages/SavedJobs.jsx'
 import { useRoutes, Link } from 'react-router-dom'
 
 
-const API_URL = process.env.NODE_ENV === 'production' ? 'https://compass-production-46e3.up.railway.app' : ''
+const API_URL = process.env.NODE_ENV === 'production' ? 'https://compass-production-46e3.up.railway.app' : 'http://localhost:3001'
 
 
 const App = () => {
@@ -49,7 +49,7 @@ const App = () => {
 
     }
     getUser();
-}, []);
+}, [API_URL]);
 
   let element = useRoutes([
     {

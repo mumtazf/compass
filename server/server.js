@@ -12,6 +12,8 @@ import {GitHub} from './config/auth.js';
 
 const app = express();
 
+const CLIENT_URL = process.env.NODE_ENV === 'production' ? 'http://compass-production-8bfb.up.railway.app' : 'http://localhost:3000'
+
 //setting up authentication
 app.use(session({
     secret: 'codepath',
@@ -20,7 +22,7 @@ app.use(session({
 }))
 
 app.use(cors({
-    origin: 'http://compass-production-8bfb.up.railway.app',
+    origin: CLIENT_URL,
     methods: 'GET, POST, PUT, PATCH, DELETE',
     credentials: true
 }))
@@ -49,7 +51,7 @@ app.use('/auth', authRoutes)
 app.use('/users-jobs', userJobsRoutes)
 
 app.get('/', (req, res) => {
-    res.redirect('http://compass-production-8bfb.up.railway.app')
+    res.redirect(CLIENT_URL)
 })
 
 const PORT = process.env.PORT || 3001
