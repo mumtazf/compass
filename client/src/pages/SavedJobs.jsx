@@ -5,11 +5,15 @@ const SavedJobs = (props) => {
     const [jobs, setJobs] = useState([]);
 
     useEffect(() => {
-        console.log("props are" , props)
-        setJobs(props.userJobs);
-    })
+
+    },[])
+
+    if (!props.userJobs) {  
+        return <div>Loading...</div>;  // Render a loading message while waiting for props.userJobs to be defined
+    }
 
     return (
+        
         <div className="jobs">
             <table>
                 <thead>
@@ -23,7 +27,7 @@ const SavedJobs = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {jobs.map((job) => (
+                    {props.userJobs.map((job) => (
                         <tr key={job.id}>
                             <td>{job.title}</td>
                             <td>{job.company}</td>

@@ -45,7 +45,7 @@ const App = () => {
         setUserJobs(json2)
       }
 
-      getUserJobs();
+      await getUserJobs();
 
     }
     getUser();

@@ -66,7 +66,9 @@ const getSavedJobs = async(req,res) => {
     console.log('hi from getsavedjobs')
     try{
         const getSavedJobsQuery = await pool.query(`
-            SELECT * FROM users_saved_jobs WHERE username = $1`,
+            SELECT jobs.* FROM jobs
+            INNER JOIN users_saved_jobs ON jobs.id = users_saved_jobs.id
+            WHERE users_saved_jobs.username = $1`,
             [username]
         )
         
