@@ -8,6 +8,7 @@ const AllPosts = () => {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
+        console.log(props)
         const fetchPosts = async () => {
             const response = await fetch(`${props.api_url}/postsRoute/`);
             const data = await response.json();
