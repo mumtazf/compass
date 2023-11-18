@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import Card from '../components/Card'
 import postData from '../data/post.js'
+import '../App.css'
 
 const AllPosts = () => {
 

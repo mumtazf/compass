@@ -10,6 +10,7 @@ import CreatePost from './pages/CreatePost'
 import AllJobs from './pages/AllJobs'
 import AdminView from './pages/AdminView'
 import Login from './pages/Login.jsx'
+import SavedJobs from './pages/SavedJobs.jsx'
 import { useRoutes, Link } from 'react-router-dom'
 
 
@@ -19,6 +20,7 @@ const API_URL = `http://localhost:3001`
 const App = () => {
 
   const [user, setUser] = useState(null);
+  const [userJobs, setUserJobs] = useState();
 
   const logout = async () => {
     const url = `${API_URL}/auth/logout`
@@ -33,10 +35,19 @@ const App = () => {
       const response = await fetch(`${API_URL}/auth/login/success`, {credentials: 'include'})
       const json = await response.json();
       setUser(json.user);
+
+      console.log("user is", json.user.username)
+
+      const getUserJobs = async() => {
+        const response = await fetch(`http://localhost:3001/users-jobs/${json.user.username}`)
+        const json2 = await response.json();
+        console.log('get user jobs', json2)
+        setUserJobs(json2)
+      }
+
+      getUserJobs();
+
     }
-
-   
-
     getUser();
 }, []);
 
@@ -63,7 +74,7 @@ const App = () => {
     }, 
     {
       path: '/allJobs',
-      element: <AllJobs api_url={API_URL}/>
+      element: <AllJobs api_url={API_URL} user = {user} />
     }, 
     {
       path: '/adminView',
@@ -72,6 +83,10 @@ const App = () => {
     {
       path: '/login',
       element: <Login api_url = {API_URL}/>
+    }, 
+    {
+      path : 'savedJobs',
+      element: <SavedJobs userJobs = {userJobs}/>  
     }
   ])
 

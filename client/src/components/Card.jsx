@@ -7,7 +7,7 @@ const Card = (props) => {
 
         <div className="card_info">
           <div className="user_info">
-            <p>{props.post.date}</p>
+            <p>{props.post.date.substring(0,10)}</p>
             <p>{props.post.username}</p>
           </div>
 

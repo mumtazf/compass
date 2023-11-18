@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './stylesheets/AllJobs.css';
 
-const AllJobs = () => {
+const AllJobs = (props) => {
     const [jobs, setJobs] = useState([]);
 
     useEffect(() => {
@@ -11,6 +11,25 @@ const AllJobs = () => {
             .then(data => setJobs(data))
             .catch(error => console.error('Error:', error));
     }, []);
+
+   
+    const saveJob = (job) => {
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({username: props.user.username, jobId : job.id})
+        }
+
+        try{
+            fetch(`http://localhost:3001/users-jobs/${props.user.username}/${job.id}`, options);
+
+            console.log('Job saved successfully');        
+        } catch (error){
+            console.error('Error', error);
+        }
+    }
 
     return (
         <div className="jobs">
@@ -30,10 +49,10 @@ const AllJobs = () => {
                         <tr key={job.id}>
                             <td>{job.title}</td>
                             <td>{job.company}</td>
-                            <td>{job.description}</td>
+                            <td>{job.description.substring(0,150)}</td>
                             <td>{job.category}</td>
                             <td>{job.url}</td>
-                            <td><button>🔖</button></td>
+                           <td><button onClick={() => saveJob(job)}>🔖</button></td>
                         </tr>
                     ))}
                 </tbody>

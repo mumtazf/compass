@@ -17,12 +17,13 @@ const AdminView = () => {
 
     return (
         <div className = "allPosts">
-            <h1>All Posts</h1>
+            <h1>Pending Posts For Approval</h1>
+            <p>Please make sure that the posts adhere to community guidelines before approving them. For more information on community guidelines, please read more here.</p>
             <div className='postGrid'>
                 {
                     posts && posts.length > 0 ? posts.map((post) => 
                         <AdminCard post = {post} />
-                ) : <h3>{'No posts found.... '}</h3>
+                ) : <h3>{'No pending posts yet. Please check back later.... '}</h3>
                 }
             </div>
         </div>

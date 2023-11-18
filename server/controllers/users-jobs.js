@@ -38,23 +38,23 @@ pool.query(createSavedJobsQuery, (error, res) => {
 })
 
  const createSavedJobs = async(req, res) => {
-    const { username } = req.params;
 
     try{
-        const job_id = parseInt(req.params.job_id)
-        const {username} = req.body
+        const { username, jobId } = req.body;
+
 
         const results = await pool.query(`
             INSERT INTO users_saved_jobs(job_id, username)
             VALUES ($1, $2)
             RETURNING *`,
-            [job_id, username]
+            [jobId, username]
         )
 
         res.status(200).json(results.rows[0])
         console.log('🆕 job added to users saved jobs')
     } catch(error){
         res.status(409).json({error: error.message})
+        console.log('error')
         console.log("Error:", error. message)
     }
 }
@@ -62,13 +62,15 @@ pool.query(createSavedJobsQuery, (error, res) => {
 //TODO PROPERLY CAUSE I DUNNO HOW TO RETRIEVE ALL JOBS BASED ON USERNAME
 
 const getSavedJobs = async(req,res) => {
+    const {username} = req.params
+    console.log('hi from getsavedjobs')
     try{
         const getSavedJobsQuery = await pool.query(`
             SELECT * FROM users_saved_jobs WHERE username = $1`,
             [username]
         )
         
-        res.status(200).json(results.rows)
+        res.status(200).json(getSavedJobsQuery.rows)
 
     } catch (error){
         res.status(409).json({error: error.message})
