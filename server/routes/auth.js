@@ -1,5 +1,6 @@
 import passport from 'passport'
 import express from 'express';
+import cors from 'cors'
 
 /**Steps for authentication
  * 1. Router
@@ -9,6 +10,15 @@ import express from 'express';
  */
 
 const router = express.Router();
+
+const CLIENT_URL = process.env.NODE_ENV === 'production' ? 'http://compass-production-8bfb.up.railway.app' : 'http://localhost:5173'
+
+
+router.use(cors({
+    origin: CLIENT_URL,
+    methods: 'GET, POST, PUT, PATCH, DELETE',
+    credentials: true
+}));
 
 router.get('/login/success', (req,res) => {
     if(req.user){
@@ -43,8 +53,8 @@ router.get(
 router.get(
     '/github/callback',
     passport.authenticate('github', {
-        successRedirect: 'http://compass-production-8bfb.up.railway.app',
-        failureRedirect: 'http://compass-production-8bfb.up.railway.app/allPosts',
+        successRedirect: '/',
+        failureRedirect: '/',
     })
 )
 

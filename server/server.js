@@ -14,6 +14,13 @@ const app = express();
 
 const CLIENT_URL = process.env.NODE_ENV === 'production' ? 'http://compass-production-8bfb.up.railway.app' : 'http://localhost:5173'
 
+
+app.use(cors({
+    origin: CLIENT_URL,
+    methods: 'GET, POST, PUT, PATCH, DELETE',
+    credentials: true
+}))
+
 //setting up authentication
 app.use(session({
     secret: 'codepath',
@@ -21,11 +28,6 @@ app.use(session({
     saveUninitialized: true
 }))
 
-app.use(cors({
-    origin: '*',
-    methods: 'GET, POST, PUT, PATCH, DELETE',
-    credentials: true
-}))
 
 app.use(passport.initialize());
 app.use(passport.session());
