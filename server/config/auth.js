@@ -4,7 +4,7 @@ import {pool} from './database.js';
 const options = {
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: `http://compass-production-8bfb.up.railway.app/auth/github/callback`
+    callbackURL: `https://compass-production-46e3.up.railway.app/auth/github/callback`
 }
 
 const verify = async (accessToken, refreshToken, profile, callback) => {

@@ -39,7 +39,7 @@ const App = () => {
       console.log("user is", json.user.username)
 
       const getUserJobs = async() => {
-        const response = await fetch(`http://localhost:3001/users-jobs/${json.user.username}`)
+        const response = await fetch(`${API_URL}/users-jobs/${json.user.username}`)
         const json2 = await response.json();
         console.log('get user jobs', json2)
         setUserJobs(json2)
