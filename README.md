@@ -56,8 +56,12 @@ Backend: Express.js, SQL, postgreSQL
 - [x] The project includes a unique field within the join table	
 - [x] The project includes a custom non-RESTful route with corresponding controller actions	
 - [x] Data is automatically generated in response to a certain event or user action	
-- [x] Data submitted via a POST or PATCH request is validated before the database is updated	
+- [x] Data submitted via a POST or PATCH request is validated before the database is updated
+	
 - [x] A subset of pages require the user to log in before accessing the content	
+
+![admin priviliges](https://github.com/mumtazf/compass/blob/main/assets/admin_priviliges.gif)
+
 - [x] Restrict available user options dynamically	
 - [x] Disable buttons after they have been clicked	
 
