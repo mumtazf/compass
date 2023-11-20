@@ -12,11 +12,10 @@ import {GitHub} from './config/auth.js';
 
 const app = express();
 
-const CLIENT_URL = process.env.NODE_ENV === 'production' ? 'http://compass-production-8bfb.up.railway.app' : 'http://localhost:5173'
 
 
 app.use(cors({
-    origin: CLIENT_URL,
+    origin: '',
     methods: 'GET, POST, PUT, PATCH, DELETE',
     credentials: true
 }))
@@ -53,7 +52,7 @@ app.use('/auth', authRoutes)
 app.use('/users-jobs', userJobsRoutes)
 
 app.get('/', (req, res) => {
-    res.redirect(CLIENT_URL)
+    res.redirect('/')
 })
 
 const PORT = process.env.PORT || 3001
