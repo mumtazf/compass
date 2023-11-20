@@ -6,7 +6,7 @@ const AllJobs = (props) => {
 
     useEffect(() => {
         // Replace with your actual API endpoint
-        fetch(`${props.api_url}/jobsRoute/`)
+        fetch(`http://localhost:3001/jobsRoute/`)
             .then(response => response.json())
             .then(data => setJobs(data))
             .catch(error => console.error('Error:', error));
@@ -23,7 +23,7 @@ const AllJobs = (props) => {
         }
 
         try{
-            fetch(`${props.api_url}/users-jobs/${props.user.username}/${job.id}`, options);
+            fetch(`http://localhost:3001/users-jobs/${props.user.username}/${job.id}`, options);
 
             console.log('Job saved successfully');        
         } catch (error){

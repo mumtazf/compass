@@ -31,36 +31,35 @@ Backend: Express.js, SQL, postgreSQL
 
 ## Features
 
-[x] The project includes an Express backend app and a React frontend app	
+- [x] The project includes an Express backend app and a React frontend app	
 
 
-[x] The project includes at least one of each of the following database relationship in Postgres: one-to-many	
+- [x] The project includes at least one of each of the following database relationship in Postgres: one-to-many	
 
-![Database preview]()
+![Database preview](https://github.com/mumtazf/compass/blob/main/assets/database_overview.gif)
 
-[x] The project includes at least one of each of the following database relationship in Postgres: many-to-many with a join table
+- [x] The project includes at least one of each of the following database relationship in Postgres: many-to-many with a join table
 
-![]()
+![Database 1:many and join](https://github.com/mumtazf/compass/blob/main/assets/database_overview.gif)
 
-[x] The project includes a well-designed RESTful API: View, Create,  Update,  Delete	
-[x] The project includes a well-designed RESTful API: Routes	
-[x] The app includes the ability to reset the database to its default state	
+- [x] The project includes a well-designed RESTful API: View, Create,  Update,  Delete	
+- [x] The project includes a well-designed RESTful API: Routes	
+- [x] The app includes the ability to reset the database to its default state	
 
-[x] The project includes at least one redirection	
+- [x] The project includes at least one redirection	
 
-[x] The project includes at least one interaction that the user can initiate and complete on the same page without navigating to a new page	
+- [x] The project includes at least one interaction that the user can initiate and complete on the same page without navigating to a new page	
 
-[x] The project includes dynamic frontend routes created with React Router	
-[x] The app includes hierarchically designed React components	
-[x] The project includes a one-to-one database relationship	
-[x] The project includes a unique field within the join table	
-[x] The project includes a custom non-RESTful route with corresponding controller actions	
-The project allows filtering and/or sorting as appropriate for your use case	
-[x] Data is automatically generated in response to a certain event or user action	
-[x] Data submitted via a POST or PATCH request is validated before the database is updated	
-[x] A subset of pages require the user to log in before accessing the content	
-[x] Restrict available user options dynamically	
-[x] Disable buttons after they have been clicked	
+- [x] The project includes dynamic frontend routes created with React Router	
+- [x] The app includes hierarchically designed React components	
+- [x] The project includes a one-to-one database relationship	
+- [x] The project includes a unique field within the join table	
+- [x] The project includes a custom non-RESTful route with corresponding controller actions	
+- [x] Data is automatically generated in response to a certain event or user action	
+- [x] Data submitted via a POST or PATCH request is validated before the database is updated	
+- [x] A subset of pages require the user to log in before accessing the content	
+- [x] Restrict available user options dynamically	
+- [x] Disable buttons after they have been clicked	
 
 ### [Posting Jobs and Advice Posts]
 
@@ -96,12 +95,3 @@ The web app includes dynamic routes for both frontend and backend apps.
 
 ![Walkthrough of crud features](https://github.com/mumtazf/compass/blob/main/assets/walkthrough2.gif)
 
-
-
-
-
-### [ADDITIONAL FEATURES GO HERE - ADD ALL FEATURES HERE IN THE FORMAT ABOVE; you will check these off and add gifs as you complete them]
-
-## Installation Instructions
-
-[instructions go here]

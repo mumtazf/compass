@@ -14,7 +14,8 @@ const CreatePost = () => {
         title: '',
         description: '',
         date: currentDate,
-        category: ''
+        category: '',
+        approval: 0
     });
 
     const handleChange = (e) => {
@@ -40,7 +41,7 @@ const CreatePost = () => {
         }
 
         try{
-            fetch(`${props.api_url}/postsRoute/`, options);          
+            fetch(`http://localhost:3001/postsRoute/`, options);          
             window.location = '/allPosts'
         } catch(error){
             console.error('Error: ', error);

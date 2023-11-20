@@ -8,7 +8,7 @@ const AdminView = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch(`${props.api_url}/postsRoute/approval`);
+            const response = await fetch(`http://localhost:3001/postsRoute/approval`);
             const data = await response.json();
             setPosts(data);
         }
