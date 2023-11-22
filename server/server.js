@@ -23,11 +23,6 @@ app.use(cors({
 }))
 
 //setting up authentication
-app.use(session({
-    secret: 'codepath',
-    resave: false,
-    saveUninitialized: true
-}))
 
 
 app.use(passport.initialize());
