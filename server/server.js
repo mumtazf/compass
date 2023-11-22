@@ -15,7 +15,7 @@ const app = express();
 
 
 app.use(cors({
-    origin: 'https://www.compass-production-8bfb.up.railway.app',
+    origin: ['https://www.compass-production-8bfb.up.railway.app', 'https://compass-production-46e3.up.railway.app/auth/login/success'],
     methods: 'GET, POST, PUT, PATCH, DELETE',
     credentials: true
 }))
