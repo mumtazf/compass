@@ -15,6 +15,7 @@ const SavedJobs = (props) => {
     return (
         
         <div className="jobs">
+            <h1>Saved Jobs</h1>
             <table>
                 <thead>
                     <tr>
@@ -23,7 +24,6 @@ const SavedJobs = (props) => {
                         <th>Description</th>
                         <th>Category</th>
                         <th>Link to posting</th>
-                        <th>Save job</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,7 +34,6 @@ const SavedJobs = (props) => {
                             <td>{job.description}</td>
                             <td>{job.category}</td>
                             <td>{job.url}</td>
-                           <td><button onClick={() => saveJob(job)}>🔖</button></td>
                         </tr>
                     ))}
                 </tbody>

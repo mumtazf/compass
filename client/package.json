@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "reset": "cd config && node --require dotenv/config reset.js",
-    "start": "npx http-server ./dist npm run reset && nodemon --require dotenv/config server.js"
+    "start": "npx http-server ./dist"
 
   },
   "dependencies": {
