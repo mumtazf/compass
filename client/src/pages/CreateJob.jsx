@@ -43,7 +43,7 @@ const CreateJob = () => {
         }
 
         try{
-            fetch(`http://localhost:3001/jobsRoute/`, options);
+            fetch(`${props.api_url}/jobsRoute/`, options);
             window.location = `${props.api_url}/allJobs`;
         } catch(error){
             console.error('Error: ', error);

@@ -10,7 +10,7 @@ const AllPosts = (props) => {
     useEffect(() => {
         console.log(props)
         const fetchPosts = async () => {
-            const response = await fetch(`http://localhost:3001/postsRoute/`);
+            const response = await fetch(`${props.api_url}/postsRoute/`);
             const data = await response.json();
             setPosts(data);
         }

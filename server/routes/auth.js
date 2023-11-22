@@ -44,8 +44,8 @@ router.get(
 router.get(
     '/github/callback',
     passport.authenticate('github', {
-        successRedirect: 'http://localhost:5173/',
-        failureRedirect: '/',
+        successRedirect: 'https://compass-production-8bfb.up.railway.app/',
+        failureRedirect: 'https://compass-production-8bfb.up.railway.app/',
     })
 )
 
