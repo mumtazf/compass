@@ -4,17 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "reset": "cd config && node --require dotenv/config reset.js",
-    "start": "npx http-server ./dist"
-
+    "dev": "react-scripts start",
+    "start": "serve build -s -n -L -p $PORT",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.18.0"
+    "react-router-dom": "^6.18.0",
+    "serve": "^14.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
