@@ -46,6 +46,10 @@ app.use('/jobsRoute', jobsRouter)
 app.use('/auth', authRoutes)
 app.use('/users-jobs', userJobsRoutes)
 
+app.get('/favicon.ico', (req, res) => {
+    res.sendFile('/download.svg');
+});
+
 app.get('/', (req, res) => {
     res.redirect('/')
 })
