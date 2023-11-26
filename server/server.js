@@ -12,12 +12,10 @@ import {GitHub} from './config/auth.js';
 
 const app = express();
 
-
+const CLIENT_URL = process.env.NODE_ENV === "production" ? "https://compass-production-8bfb.up.railway.app" : "https://localhost:3001";
 
 app.use(cors({
-    origin: ['https://www.compass-production-8bfb.up.railway.app/*',
-     'https://compass-production-46e3.up.railway.app/auth/login/success',
-    'https://compass-production-46e3.up.railway.app/*'],
+    origin: true,
     methods: 'GET, POST, PUT, PATCH, DELETE',
     credentials: true
 }))
